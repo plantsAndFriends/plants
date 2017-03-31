@@ -20,7 +20,7 @@
                 <h1 class="text-center">Sign Up!</h1>
             </div>                    
         
-            <% //if(request.getParameter("name") == null) {%>
+            <% if(request.getParameter("name") == null) {%>
             <form method="post">
                 <div class="form-group">
                     <label>Username: </label>
@@ -45,7 +45,10 @@
                         <input class="form-control" role="button" type="submit" value="Sign Up" name="send" />
                     </div>                    
                 </div>
-            </form>        
+            </form> 
+            <%}else{%>
+            <jsp:forward page="ControladorBeanSignUp?accio=insertBeanSignUp"/>
+            <%}%>
         </div>        
         
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
