@@ -23,20 +23,20 @@
             <% if(request.getParameter("name") == null) {%>
             <form method="post">
                 <div class="form-group">
-                    <label>Username: </label>
-                    <div class="col-sm-6">
+                    <label class="col-3">Username: </label>
+                    <div class="col-6">
                         <input type="text" class="form-control" name="username"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Email: </label>
-                    <div class="col-sm-6">
+                    <label class="col-3">Email: </label>
+                    <div class="col-6">
                         <input type="text" class="form-control" name="email"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Password: </label>
-                    <div class="col-sm-6">
+                    <label class="col-3">Password: </label>
+                    <div class="col-6">
                         <input type="password" class="form-control" name="password"/>
                     </div>
                 </div>            
