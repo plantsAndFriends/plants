@@ -3,7 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>pants</artifactId>
+
+    <artifactId>plants</artifactId>
+   
+
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -20,6 +23,12 @@
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
         </dependency>
     </dependencies>
 
