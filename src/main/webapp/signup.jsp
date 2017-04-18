@@ -16,33 +16,31 @@
     <body>
         <jsp:setProperty  name="bean_signup" property="*" />
         <div class="container">
-            <div class="row">
-                <h1 class="text-center">Sign Up!</h1>
-            </div>                    
-        
-            <% if(request.getParameter("name") == null) {%>
-            <form method="post">
-                <div class="form-group">
-                    <label class="col-3">Username: </label>
-                    <div class="col-6">
-                        <input type="text" class="form-control" name="username"/>
+            
+            <h1 class="text-center mt-5 mb-5">Sign Up</h1>
+                               
+            
+            <% if(request.getParameter("name") == null) {%>            
+            <form class="form-horizontal" method="post">
+                <div class="form-group">                    
+                    <div class="col-md-4 offset-4">
+                        <input type="text" class="form-control" name="username" placeholder="Your username"/>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-3">Email: </label>
-                    <div class="col-6">
-                        <input type="text" class="form-control" name="email"/>
+                <div class="form-group">                    
+                    <div class="col-md-4 offset-4">
+                        <input type="text" class="form-control" name="email" placeholder="Your email"/>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-3">Password: </label>
-                    <div class="col-6">
-                        <input type="password" class="form-control" name="password"/>
+                <div class="form-group">                    
+                    <div class="col-md-4 offset-4">
+                        <input type="password" class="form-control" name="password" placeholder="Your password"/>
                     </div>
-                </div>            
-                <div class="form-group">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <input class="form-control" role="button" type="submit" value="Sign Up" name="send" />
+                </div>   
+                
+                <div class="form-group mt-5">
+                    <div class="col-md-4 offset-4">
+                        <button class="btn btn-success" name="send">Sign Up</button>
                     </div>                    
                 </div>
             </form> 
